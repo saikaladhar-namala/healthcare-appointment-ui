@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #dff6ff, #edf8ff);
+}
+
+/* Login & Register Container */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Login Card */
+
+.auth-card {
+    width: 420px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.auth-card h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Register Card */
+
+.register-card {
+    width: 750px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.register-card h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.register-card p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select {
+    height: 48px;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 .15rem rgba(37, 99, 235, .25);
+}
+
+/* Buttons */
+
+.btn-primary {
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #0ea5a4, #2563eb);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0891b2, #1d4ed8);
+}
+
+/* Validation */
+
+.text-danger {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
