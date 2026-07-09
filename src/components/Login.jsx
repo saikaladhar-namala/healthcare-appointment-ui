@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { API } from "../api/ApiConstants";
 
 const Login = () => {
 
@@ -34,7 +35,7 @@ const Login = () => {
             };
 
             const response = await axios.post(
-                "http://localhost:8999/healthcare-api/auth/login",
+                API?.LOGIN,
                 payload
             );
 

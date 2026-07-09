@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { API } from "../api/ApiConstants";
 
 const Register = () => {
 
@@ -40,21 +41,13 @@ const Register = () => {
             const payload = {
 
                 employeeName: values.fullName,
-
-                designation: "PATIENT",
-
                 userName: values.email,
-
                 password: values.password,
-
-                roleId: 2,
-
-                isActive: true
 
             };
 
             const response = await axios.post(
-                "http://localhost:8999/healthcare-api/auth/signup",
+                API?.REGISTER,
                 payload
             );
 
